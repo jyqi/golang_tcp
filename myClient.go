@@ -33,13 +33,13 @@ func init() {
 
 func main() {
 	var (
-		host   = "192.168.5.239"     //服务端IP
+		host   = "192.168.2.130"     //服务端IP
 		port   = "9090"            //服务端端口
 		remote = host + ":" + port //构造连接串
 
 		fileName      = "in.mp4" //待发送文件名称
 		//mergeFileName = "frame.jpg"   //待合并文件名称
-		coroutine     = 50         //协程数量或拆分文件的数量
+		coroutine     = 10         //协程数量或拆分文件的数量
 		bufsize       = 230400     //单次发送数据的大小
 	)
 
